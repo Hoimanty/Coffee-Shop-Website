@@ -1,0 +1,210 @@
+body {
+   font-family: Arial, sans-serif;
+    background-image: url("images/coffee-cup.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:  beige;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    color: blanchedalmond;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 28px;
+    color:  white;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(255, 222, 60);
+}
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background-color: goldenrod;
+    width: 180px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s;
+}
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+.menu-item h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: papayawhip;
+}
+
+.menu-item p {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+body > img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(152, 88, 77, 0.85);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+nav h2 {
+    margin: 0;
+    color: gold;
+    font-size: 24px;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: wheat;
+}
+
+.hero {
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero p {
+    margin: 10px;
+}
+
+.hero-text {
+    font-size: 17px;
+}
+
+.menu-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #6f4e37;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.menu-button:hover {
+    background-color: gold;
+}
+
+.about-section {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(62, 39, 35, 0.8);
+    border-radius: 15px;
+}
+
+.about-section h2 {
+    margin-top: 0;
+    color: blanchedalmond;
+}
+
+.about-section p {
+    line-height: 1.7;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(62, 39, 35, 0.8);
+    border-radius: 15px;
+}
+
+.contact-section h2 {
+    margin-top: 0;
+    color: blanchedalmond;
+}
+
+.contact-section p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    background: rgba(62, 39, 35, 0.9);
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+    color: blanchedalmond;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav div {
+        gap: 15px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        width: 250px;
+        margin: auto;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+}
